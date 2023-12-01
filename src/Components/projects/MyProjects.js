@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import '../../index.css';
+import { useDarkMode } from '../DarkModeContext/DarkModeContext'; // Import the hook from its path
+
 
 import projectImage1 from '.././assets/img/project-angular.png';
 import projectImage2 from '.././assets/img/shop-cara.png';
@@ -13,6 +15,7 @@ import projectImage8 from '.././assets/img/add-proudct.png';
 import projectImage9 from '.././assets/img/question .png';
 
 const MyProjects = () => {
+  const { darkMode } = useDarkMode(); // Use the dark mode value from context
   const projects = [
     {
       imageUrl: projectImage1,
@@ -63,7 +66,8 @@ const MyProjects = () => {
   ];
 
   return (
-    <div className="container">
+    <div className={darkMode ? 'dark-mode' : ''}> {/* This will wrap all content */}
+    <div className={`container ${darkMode ? 'dark-mode-class' : ''}`}>
       <div className="row">
         {projects.map((project, index) => (
           <ProjectCard
@@ -75,6 +79,7 @@ const MyProjects = () => {
         ))}
       </div>
     </div>
+  </div>
   );
 };
 

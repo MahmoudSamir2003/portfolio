@@ -2,11 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { useDarkMode } from "../DarkModeContext/DarkModeContext";
 
 const Contact = () => {
+    const { darkMode } = useDarkMode();
     return (
-        <div className="contact-section">
-            <div className="contact-item">
+        <div className={`contact-section ${darkMode ? 'dark-mode-class' : ''}`}>
+        <div className="contact-item">
                 <FontAwesomeIcon icon={faLinkedinIn} />
                 <a href="https://www.linkedin.com/in/mahmoud-samir-salama-992681238" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>

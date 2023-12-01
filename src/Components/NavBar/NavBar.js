@@ -1,8 +1,10 @@
 /* global google */ // Declare 'google' as a global variable
-import "../../index.css"
+import "../../index.css";
 import React, { useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
+import { useDarkMode } from "../DarkModeContext/DarkModeContext";
+
 // Hook for adding and removing the Google Translate script
 const useGoogleTranslateScript = () => {
   useEffect(() => {
@@ -39,20 +41,63 @@ const NavBar = () => {
   // Use the Google Translate script
   useGoogleTranslateScript();
 
-  
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar
+      bg={darkMode ? "dark" : "light"}
+      variant={darkMode ? "dark" : "light"}
+      expand="lg"
+    >
       <Container>
         <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-  <Link to="HomePortfolio" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Home</Link>
-  <Link to="MyProjects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Projects</Link>
-  <Link to="SkillsCounter" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Skills</Link>
-  <Link to="Contact" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Contact</Link>
-</Nav>
+            <Link
+              to="HomePortfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+            >
+              Home
+            </Link>
+            <Link
+              to="MyProjects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+            >
+              Projects
+            </Link>
+            <Link
+              to="SkillsCounter"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+            >
+              Skills
+            </Link>
+            <Link
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+            >
+              Contact
+            </Link>
+          </Nav>
+          <i onClick={toggleDarkMode} className="dark-mode-toggle button-pointer">
+          {darkMode ? '🌙' : '☀️'}
+        </i>
           <div id="google_translate_element"></div>
         </Navbar.Collapse>
       </Container>

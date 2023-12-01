@@ -4,7 +4,6 @@
   box-sizing: border-box !important;
   text-decoration: none !important;
 }
-
 .App {
   background-color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -214,5 +213,74 @@
 }
 
 .nav-link {
+  cursor: pointer;
+}
+
+body {
+  background-color: white !important;
+  color: black !important;
+}
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode-class {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode .card {
+  background-color: black;
+  color: white !important;
+  border: 2px solid #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.dark-mode .card .icon {
+  color: white !important;
+}
+.dark-mode .card h3 {
+  color: white;
+}
+.dark-mode .card {
+  background-color: black;
+  color: white;
+  border: 2px solid #231212;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19); /* تأثير الظل للبطاقة */
+}
+.divider {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+}
+
+.dark-mode .divider {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+.dark-mode-class {
+  background-color: #000; /* تعيين اللون الأسود للخلفية */
+  margin: 0;
+  padding: 0;
+  /* ...أنماط إضافية إذا لزم الأمر... */
+}
+
+.dark-mode {
+  background-color: #121212; /* This will set the background to a dark color */
+  color: #ffffff; /* This will set the text color to white */
+}
+
+body.dark-mode,
+.dark-mode-class {
+  background-color: black; /* This will set the background to black */
+  color: white; /* This will set the text color to white */
+}
+
+/* Style the cards to take up 50% width and center the content */
+.dark-mode-class .skill-level.card {
+  width: 50%; /* Set the width of each card to be 50% of the parent container */
+  margin: 0 auto; /* Center the cards horizontally */
+}
+.button-pointer{
   cursor: pointer;
 }
