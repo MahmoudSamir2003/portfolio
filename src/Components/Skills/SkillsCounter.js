@@ -21,7 +21,7 @@ const SkillsCounter = () => {
     <div className={`container-fluid ${darkMode ? 'dark-mode-class' : ''}`}>
     <div className="row">
       {skills.map((skill, index) => (
-        <div key={index} className="col-6 mb-4 d-flex justify-content-center">
+        <div key={index} className="col-12 mb-4 d-flex justify-content-center">
           <SkillLevel
             icon={skill.icon}
             skill={skill.skill}
