@@ -284,3 +284,18 @@ body.dark-mode,
 .button-pointer{
   cursor: pointer;
 }
+.skill-level.card{
+  width: 50%; /* Set the width of each card to be 50% of the parent container */
+}
+/* Media query for screen sizes between 375px and 768px */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .skill-level.card  {
+    display: block;
+    width: 95vh; /* or 95vw if you want to base it on the viewport width */
+  }
+
+  .dark-mode-class .skill-level.card  {
+    display: block;
+    width: 95vh; /* or 95vw - ensuring consistency in width for both modes */
+  }
+}
