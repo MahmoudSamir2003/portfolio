@@ -128,6 +128,7 @@
   text-align: center;
   background-color: #fff; /* White background */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
 }
 
 .skill-level:hover {
@@ -163,14 +164,14 @@
     justify-content: space-around;
   }
   .skill-level {
-    width: calc(50% - 10px); /* Adjust the width and margin as needed */
+width: 100%;
   }
 }
 
 /* Large devices (desktops): 3 columns */
 @media (min-width: 992px) {
   .skill-level {
-    width: calc(33.333% - 10px); /* Adjust the width and margin as needed */
+    width: 100%; /* Adjust the width and margin as needed */
   }
 }
 /* end  media skills */
@@ -237,6 +238,7 @@ body.dark-mode {
   border: 2px solid #ffffff;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .dark-mode .card .icon {
   color: white !important;
@@ -250,6 +252,7 @@ body.dark-mode {
   border: 2px solid #231212;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
     0 6px 20px 0 rgba(255, 255, 255, 0.19); /* تأثير الظل للبطاقة */
+    width: 100%;
 }
 .divider {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -278,24 +281,13 @@ body.dark-mode,
 
 /* Style the cards to take up 50% width and center the content */
 .dark-mode-class .skill-level.card {
-  width: 50%; /* Set the width of each card to be 50% of the parent container */
+  width: 100%; /* Set the width of each card to be 50% of the parent container */
   margin: 0 auto; /* Center the cards horizontally */
 }
 .button-pointer{
   cursor: pointer;
 }
 .skill-level.card{
-  width: 50%; /* Set the width of each card to be 50% of the parent container */
+  width:100%; /* Set the width of each card to be 50% of the parent container */
 }
-/* Media query for screen sizes between 375px and 768px */
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .skill-level.card  {
-    display: block;
-    width: 95vh; /* or 95vw if you want to base it on the viewport width */
-  }
 
-  .dark-mode-class .skill-level.card  {
-    display: block;
-    width: 95vh; /* or 95vw - ensuring consistency in width for both modes */
-  }
-}
