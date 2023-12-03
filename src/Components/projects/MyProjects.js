@@ -19,50 +19,49 @@ const MyProjects = () => {
   const projects = [
     {
       imageUrl: projectImage1,
-      projectInfo: 'E-commerce template by using HTML, CSS, Bootstrap, Angular14.',
+      projectInfo: 'my project E-commerce template by using HTML, CSS, Bootstrap, Angular14.',
       externalLink: 'https://ecommerce-1-eight.vercel.app'
     },
     {
       imageUrl: projectImage2,
-      projectInfo: 'E-commerce template by using HTML, CSS, Bootstrap, js',
+      projectInfo: 'my project E-commerce template by using HTML, CSS, Bootstrap, js',
       externalLink: 'https://shop-5.vercel.app/'
     },
     {
       imageUrl: projectImage3,
-      projectInfo: 'API project registration in JavaScript, React, and Redux',
+      projectInfo: 'my project API project registration in JavaScript, React, and Redux',
       externalLink: 'https://master--gorgeous-cajeta-bd9b0e.netlify.app/'
     },
     {
       imageUrl: projectImage4,
-      projectInfo: 'Dashboard system by using HTML CSS',
+      projectInfo: 'my project Dashboard system by using HTML CSS',
       externalLink: 'https://dashboard-phi.vercel.app/'
     },
     {
       imageUrl: projectImage5,
-      projectInfo: 'Website Using HTML CSS JavaScript',
+      projectInfo: 'my project Website Using HTML CSS JavaScript',
       externalLink: 'https://welcome-world.vercel.app/'
     },
     {
       imageUrl: projectImage6,
-      projectInfo: 'E-commerce site in React.js by using JavaScript, React, and Redux',
+      projectInfo: 'my project E-commerce site in React.js by using JavaScript, React, and Redux',
       externalLink: 'https://github.com/MahmoudSamir2003/e-commerce-React.js'
     },
     {
       imageUrl: projectImage7,
-      projectInfo: 'A Music Website Using HTML CSS JavaScript',
+      projectInfo: 'my project A Music Website Using HTML CSS JavaScript',
       externalLink: 'https://js-audio.vercel.app/'
     },
     {
       imageUrl: projectImage8,
-      projectInfo: 'CRUD Project by using JavaScript and Bootstrap',
+      projectInfo: 'my project CRUD Project by using JavaScript and Bootstrap',
       externalLink: 'https://proudct.vercel.app/'
     },
     {
       imageUrl: projectImage9,
-      projectInfo: 'Questions application in CSS, JavaScript, and React',
+      projectInfo: 'my project Questions application in CSS, JavaScript, and React',
       externalLink: 'https://questions-application.vercel.app/'
     },
-    // يمكنك إضافة المزيد من المشاريع هنا بنفس الطريقة
   ];
 
   return (
